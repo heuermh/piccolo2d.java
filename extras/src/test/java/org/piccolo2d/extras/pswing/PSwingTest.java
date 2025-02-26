@@ -123,7 +123,7 @@ public class PSwingTest extends TestCase {
 
     public void testAddingSwingComponentToWrappedHierarchyMakesItNotDoubleBuffer() {
         final JPanel panel = new JPanel();
-        //final PSwing pSwing = new PSwing(panel);
+        final PSwing pSwing = new PSwing(panel);
         final JComponent child = new JLabel("Test Component");
         child.setDoubleBuffered(true);
         panel.add(child);
